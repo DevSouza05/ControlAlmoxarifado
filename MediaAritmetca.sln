@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34723.18
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediaAritmetca", "MediaAritmetca\MediaAritmetca.csproj", "{2B939AB5-BF63-44BB-826C-A85FE951E9EA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Itens de Solução", "Itens de Solução", "{AF41522E-EECB-4F2F-A3F1-E363A780D498}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2B939AB5-BF63-44BB-826C-A85FE951E9EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B939AB5-BF63-44BB-826C-A85FE951E9EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B939AB5-BF63-44BB-826C-A85FE951E9EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B939AB5-BF63-44BB-826C-A85FE951E9EA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D8326FD9-DB72-4913-BAB3-24246B319239}
+	EndGlobalSection
+EndGlobal
