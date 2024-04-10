@@ -7,7 +7,7 @@ using System.Text;
 
 public class ListaDeItens
 {
-private List<Item> listaDeItens = new List<Item>();
+    private List<Item> listaDeItens = new List<Item>();
 
     public void AdicionarItem(string nome, string codigo, string tipo, double quantidade)
     {
@@ -51,11 +51,14 @@ private List<Item> listaDeItens = new List<Item>();
         listaDeItens.Clear();
     }
 
-    public List<Item> ObterLista() => listaDeItens;
+    public List<Item> ObterLista()
+    {
+        return listaDeItens;
+    }
 
     // Classe que representa um item
     [Serializable]
-   public class Item
+    public class Item
     {
         public string Nome { get; set; }
         public string Codigo { get; set; }
