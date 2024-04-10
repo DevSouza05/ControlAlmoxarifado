@@ -9,19 +9,32 @@ namespace MediaAritmetca
 {
     public class Item
     {
-        public string name {  get; set; }
+        public string Name { get; set; }
         public string codi { get; set; }
-
         public string type { get; set; }
-        public double amount {  get; set; }
+        public double amount { get; set; }
 
         public Item(string nome, string codigo, string tipo, double quantidade)
         {
-            name = nome;
+            Name = nome;
             codi = codigo;
             type = tipo;
             amount = quantidade;
         }
 
     }
+
+    public class ItemComAmount
+    {
+        public Item Item { get; set; }
+        public double Amount { get; set; }
+
+        public ItemComAmount(Item item, double amount)
+        {
+            Item = item;
+            Amount = amount;
+        }
+
+    }
+
 }

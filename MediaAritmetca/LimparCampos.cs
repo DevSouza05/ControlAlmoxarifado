@@ -9,7 +9,7 @@ namespace MediaAritmetca
 {
     static class Utils
     {
-       public static void LimparCampos(params Control[] controles)
+        public static void LimparCampos(params Control[] controles)
         {
             foreach (var controle in controles)
             {
