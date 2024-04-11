@@ -30,7 +30,12 @@
         {
             comboBox1 = new ComboBox();
             btnBuscar = new Button();
-            listViewItens = new ListView();
+            dataGridView1 = new DataGridView();
+            clItem = new DataGridViewTextBoxColumn();
+            clCodigo = new DataGridViewTextBoxColumn();
+            clTipo = new DataGridViewTextBoxColumn();
+            clQuantidade = new DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // comboBox1
@@ -50,13 +55,35 @@
             btnBuscar.Text = "Filtrar";
             btnBuscar.UseVisualStyleBackColor = true;
             // 
-            // listViewItens
+            // dataGridView1
             // 
-            listViewItens.Location = new Point(159, 111);
-            listViewItens.Name = "listViewItens";
-            listViewItens.Size = new Size(344, 176);
-            listViewItens.TabIndex = 0;
-            listViewItens.UseCompatibleStateImageBehavior = false;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { clItem, clCodigo, clTipo, clQuantidade });
+            dataGridView1.Location = new Point(113, 112);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.Size = new Size(441, 190);
+            dataGridView1.TabIndex = 3;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
+            // 
+            // clItem
+            // 
+            clItem.HeaderText = "Item";
+            clItem.Name = "clItem";
+            // 
+            // clCodigo
+            // 
+            clCodigo.HeaderText = "Codigo";
+            clCodigo.Name = "clCodigo";
+            // 
+            // clTipo
+            // 
+            clTipo.HeaderText = "Tipo";
+            clTipo.Name = "clTipo";
+            // 
+            // clQuantidade
+            // 
+            clQuantidade.HeaderText = "Quantidade";
+            clQuantidade.Name = "clQuantidade";
             // 
             // ConsultaEstoqueForm
             // 
@@ -64,17 +91,22 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.InactiveCaption;
             ClientSize = new Size(800, 450);
-            Controls.Add(listViewItens);
+            Controls.Add(dataGridView1);
             Controls.Add(btnBuscar);
             Controls.Add(comboBox1);
             Name = "ConsultaEstoqueForm";
             Text = "ConsultaEstoqueForm";
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
         private ComboBox comboBox1;
         private Button btnBuscar;
-        private ListView listViewItens;
+        private DataGridView dataGridView1;
+        private DataGridViewTextBoxColumn clItem;
+        private DataGridViewTextBoxColumn clCodigo;
+        private DataGridViewTextBoxColumn clTipo;
+        private DataGridViewTextBoxColumn clQuantidade;
     }
 }

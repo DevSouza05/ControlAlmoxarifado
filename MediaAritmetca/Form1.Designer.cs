@@ -54,7 +54,6 @@
             label1.Text = "CONTROLE DE ALMOXARIFADO";
             label1.TextAlign = ContentAlignment.TopCenter;
             label1.UseMnemonic = false;
-           
             // 
             // label2
             // 
@@ -68,7 +67,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(136, 175);
+            label3.Location = new Point(382, 134);
             label3.Name = "label3";
             label3.Size = new Size(56, 15);
             label3.TabIndex = 2;
@@ -77,7 +76,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(136, 248);
+            label4.Location = new Point(365, 181);
             label4.Name = "label4";
             label4.Size = new Size(82, 15);
             label4.TabIndex = 3;
@@ -86,12 +85,11 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(136, 210);
+            label5.Location = new Point(167, 181);
             label5.Name = "label5";
             label5.Size = new Size(42, 15);
             label5.TabIndex = 4;
             label5.Text = "Tipo >";
-          
             // 
             // vlName
             // 
@@ -102,14 +100,14 @@
             // 
             // vlAmount
             // 
-            vlAmount.Location = new Point(225, 241);
+            vlAmount.Location = new Point(453, 173);
             vlAmount.Name = "vlAmount";
             vlAmount.Size = new Size(100, 23);
             vlAmount.TabIndex = 7;
             // 
             // vlCodi
             // 
-            vlCodi.Location = new Point(225, 167);
+            vlCodi.Location = new Point(453, 126);
             vlCodi.Name = "vlCodi";
             vlCodi.Size = new Size(100, 23);
             vlCodi.TabIndex = 8;
@@ -117,7 +115,7 @@
             // button1
             // 
             button1.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.Location = new Point(397, 237);
+            button1.Location = new Point(225, 237);
             button1.Name = "button1";
             button1.Size = new Size(127, 26);
             button1.TabIndex = 11;
@@ -129,7 +127,7 @@
             // 
             vlType.FormattingEnabled = true;
             vlType.Items.AddRange(new object[] { "Informática", "Medicamentos", "Limpeza", "Mat. Escritório" });
-            vlType.Location = new Point(225, 207);
+            vlType.Location = new Point(225, 173);
             vlType.Name = "vlType";
             vlType.Size = new Size(100, 23);
             vlType.TabIndex = 12;
@@ -137,7 +135,7 @@
             // button2
             // 
             button2.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.Location = new Point(530, 237);
+            button2.Location = new Point(408, 237);
             button2.Name = "button2";
             button2.Size = new Size(145, 26);
             button2.TabIndex = 13;
@@ -165,6 +163,7 @@
             Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             ForeColor = SystemColors.ControlText;
             Name = "Form1";
+            Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
         }

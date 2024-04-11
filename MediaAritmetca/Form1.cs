@@ -20,7 +20,7 @@ namespace MediaAritmetca
             var Codi = vlCodi.Text;
             var Type = vlType.Text;
             var Amount = vlAmount.Text;
-            double amountValue;
+            int amountValue;
 
             if (String.IsNullOrEmpty(Name) || String.IsNullOrEmpty(Codi) || String.IsNullOrEmpty(Type) || String.IsNullOrEmpty(Amount))
             {
@@ -28,11 +28,12 @@ namespace MediaAritmetca
                 return;
             }
 
-            if (!double.TryParse(Amount, out amountValue))
+            if (!int.TryParse(Amount, out amountValue))
             {
-                MessageBox.Show("Tipo deve ser um número válido");
+                MessageBox.Show("O campo (quantidade) deve ser preenchido com números inteiros");
                 return;
             }
+
 
             listaDeItens.AdicionarItem(Name, Codi, Type, amountValue);
 
@@ -54,8 +55,13 @@ namespace MediaAritmetca
 
         private void button2_Click(object sender, EventArgs e)
         {
-            ConsultaEstoqueForm consultaEstoqueForm = new ConsultaEstoqueForm(listaDeItens.ObterLista(), @"C:\Caminho\Para\O\Arquivo\lista_itens.json");
+            ConsultaEstoqueForm consultaEstoqueForm = new ConsultaEstoqueForm(listaDeItens.ObterLista());
             consultaEstoqueForm.Show();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
