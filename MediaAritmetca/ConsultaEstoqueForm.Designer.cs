@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            comboBox1 = new ComboBox();
-            btnBuscar = new Button();
+            cmbTipo = new ComboBox();
+            btnFilter = new Button();
             dataGridView1 = new DataGridView();
             clItem = new DataGridViewTextBoxColumn();
             clCodigo = new DataGridViewTextBoxColumn();
@@ -38,22 +38,24 @@
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
-            // comboBox1
+            // cmbTipo
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(159, 71);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(266, 23);
-            comboBox1.TabIndex = 1;
+            cmbTipo.FormattingEnabled = true;
+            cmbTipo.Items.AddRange(new object[] { "Informática", "Limpeza", "Mat.Escritório" });
+            cmbTipo.Location = new Point(159, 71);
+            cmbTipo.Name = "cmbTipo";
+            cmbTipo.Size = new Size(266, 23);
+            cmbTipo.TabIndex = 1;
             // 
-            // btnBuscar
+            // btnFilter
             // 
-            btnBuscar.Location = new Point(431, 71);
-            btnBuscar.Name = "btnBuscar";
-            btnBuscar.Size = new Size(72, 23);
-            btnBuscar.TabIndex = 2;
-            btnBuscar.Text = "Filtrar";
-            btnBuscar.UseVisualStyleBackColor = true;
+            btnFilter.Location = new Point(431, 71);
+            btnFilter.Name = "btnFilter";
+            btnFilter.Size = new Size(72, 23);
+            btnFilter.TabIndex = 2;
+            btnFilter.Text = "Filtrar";
+            btnFilter.UseVisualStyleBackColor = true;
+            btnFilter.Click += btnFilter_Click;
             // 
             // dataGridView1
             // 
@@ -92,8 +94,8 @@
             BackColor = SystemColors.InactiveCaption;
             ClientSize = new Size(800, 450);
             Controls.Add(dataGridView1);
-            Controls.Add(btnBuscar);
-            Controls.Add(comboBox1);
+            Controls.Add(btnFilter);
+            Controls.Add(cmbTipo);
             Name = "ConsultaEstoqueForm";
             Text = "ConsultaEstoqueForm";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
@@ -101,8 +103,8 @@
         }
 
         #endregion
-        private ComboBox comboBox1;
-        private Button btnBuscar;
+        private ComboBox cmbTipo;
+        private Button btnFilter;
         private DataGridView dataGridView1;
         private DataGridViewTextBoxColumn clItem;
         private DataGridViewTextBoxColumn clCodigo;
