@@ -35,7 +35,8 @@
             clCodigo = new DataGridViewTextBoxColumn();
             clTipo = new DataGridViewTextBoxColumn();
             clQuantidade = new DataGridViewTextBoxColumn();
-            button1 = new Button();
+            btnMovimentacao = new Button();
+            btnRegistrarSaida = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -89,15 +90,25 @@
             clQuantidade.HeaderText = "Quantidade";
             clQuantidade.Name = "clQuantidade";
             // 
-            // button1
+            // btnMovimentacao
             // 
-            button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.Location = new Point(503, 72);
-            button1.Name = "button1";
-            button1.Size = new Size(105, 23);
-            button1.TabIndex = 4;
-            button1.Text = "Movimentações";
-            button1.UseVisualStyleBackColor = true;
+            btnMovimentacao.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnMovimentacao.Location = new Point(683, 229);
+            btnMovimentacao.Name = "btnMovimentacao";
+            btnMovimentacao.Size = new Size(105, 34);
+            btnMovimentacao.TabIndex = 4;
+            btnMovimentacao.Text = "Movimentações";
+            btnMovimentacao.UseVisualStyleBackColor = true;
+            // 
+            // btnRegistrarSaida
+            // 
+            btnRegistrarSaida.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnRegistrarSaida.Location = new Point(683, 269);
+            btnRegistrarSaida.Name = "btnRegistrarSaida";
+            btnRegistrarSaida.Size = new Size(105, 33);
+            btnRegistrarSaida.TabIndex = 5;
+            btnRegistrarSaida.Text = "Saidas";
+            btnRegistrarSaida.UseVisualStyleBackColor = true;
             // 
             // ConsultaEstoqueForm
             // 
@@ -105,7 +116,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.InactiveCaption;
             ClientSize = new Size(800, 450);
-            Controls.Add(button1);
+            Controls.Add(btnRegistrarSaida);
+            Controls.Add(btnMovimentacao);
             Controls.Add(dataGridView1);
             Controls.Add(btnFilter);
             Controls.Add(cmbTipo);
@@ -123,6 +135,7 @@
         private DataGridViewTextBoxColumn clCodigo;
         private DataGridViewTextBoxColumn clTipo;
         private DataGridViewTextBoxColumn clQuantidade;
-        private Button button1;
+        private Button btnMovimentacao;
+        private Button btnRegistrarSaida;
     }
 }
