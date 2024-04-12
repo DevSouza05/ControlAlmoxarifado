@@ -2,6 +2,7 @@ using System;
 using System.IO; // Importe este namespace para usar File e Directory
 using System.Collections.Generic;
 using System.Windows.Forms.VisualStyles;
+using System.Diagnostics.Eventing.Reader;
 
 namespace MediaAritmetca
 {
@@ -14,6 +15,7 @@ namespace MediaAritmetca
             InitializeComponent();
         }
 
+        //Evento do botão de cadastrar o item
         private void button1_Click(object sender, EventArgs e)
         {
             var Name = vlName.Text;
@@ -34,7 +36,6 @@ namespace MediaAritmetca
                 return;
             }
 
-
             listaDeItens.AdicionarItem(Name, Codi, Type, amountValue);
 
             string caminhoArquivo = @"C:\Caminho\Para\O\Arquivo\lista_itens.json";
@@ -53,6 +54,7 @@ namespace MediaAritmetca
             MessageBox.Show("Item cadastrado com sucesso!");
         }
 
+        //Event do botão de cunsultar Estoque
         private void button2_Click(object sender, EventArgs e)
         {
             ConsultaEstoqueForm consultaEstoqueForm = new ConsultaEstoqueForm(listaDeItens.ObterLista());
