@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34723.18
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediaAritmetca", "MediaAritmetca\MediaAritmetca.csproj", "{2B939AB5-BF63-44BB-826C-A85FE951E9EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "control", "MediaAritmetca\control.csproj", "{2B939AB5-BF63-44BB-826C-A85FE951E9EA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Itens de Solução", "Itens de Solução", "{AF41522E-EECB-4F2F-A3F1-E363A780D498}"
 EndProject
