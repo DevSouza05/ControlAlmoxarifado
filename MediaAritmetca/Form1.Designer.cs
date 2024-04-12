@@ -38,7 +38,7 @@
             vlCodi = new TextBox();
             button1 = new Button();
             vlType = new ComboBox();
-            button2 = new Button();
+            checkStock = new Button();
             SuspendLayout();
             // 
             // label1
@@ -47,7 +47,7 @@
             label1.BackColor = SystemColors.ActiveCaption;
             label1.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = SystemColors.ActiveCaptionText;
-            label1.Location = new Point(225, 48);
+            label1.Location = new Point(245, 34);
             label1.Name = "label1";
             label1.Size = new Size(350, 32);
             label1.TabIndex = 0;
@@ -58,16 +58,16 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(136, 134);
+            label2.Location = new Point(196, 123);
             label2.Name = "label2";
-            label2.Size = new Size(85, 15);
+            label2.Size = new Size(61, 15);
             label2.TabIndex = 1;
-            label2.Text = "Nm do Item >";
+            label2.Text = "Descrição";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(382, 134);
+            label3.Location = new Point(418, 126);
             label3.Name = "label3";
             label3.Size = new Size(56, 15);
             label3.TabIndex = 2;
@@ -76,7 +76,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(365, 181);
+            label4.Location = new Point(407, 173);
             label4.Name = "label4";
             label4.Size = new Size(82, 15);
             label4.TabIndex = 3;
@@ -85,7 +85,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(167, 181);
+            label5.Location = new Point(210, 170);
             label5.Name = "label5";
             label5.Size = new Size(42, 15);
             label5.TabIndex = 4;
@@ -93,21 +93,21 @@
             // 
             // vlName
             // 
-            vlName.Location = new Point(225, 126);
+            vlName.Location = new Point(258, 123);
             vlName.Name = "vlName";
             vlName.Size = new Size(100, 23);
             vlName.TabIndex = 5;
             // 
             // vlAmount
             // 
-            vlAmount.Location = new Point(453, 173);
+            vlAmount.Location = new Point(495, 170);
             vlAmount.Name = "vlAmount";
             vlAmount.Size = new Size(100, 23);
             vlAmount.TabIndex = 7;
             // 
             // vlCodi
             // 
-            vlCodi.Location = new Point(453, 126);
+            vlCodi.Location = new Point(495, 123);
             vlCodi.Name = "vlCodi";
             vlCodi.Size = new Size(100, 23);
             vlCodi.TabIndex = 8;
@@ -115,7 +115,7 @@
             // button1
             // 
             button1.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.Location = new Point(225, 237);
+            button1.Location = new Point(245, 237);
             button1.Name = "button1";
             button1.Size = new Size(127, 26);
             button1.TabIndex = 11;
@@ -126,30 +126,31 @@
             // vlType
             // 
             vlType.FormattingEnabled = true;
-            vlType.Items.AddRange(new object[] { "Informática", "Medicamentos", "Limpeza", "Mat. Escritório" });
-            vlType.Location = new Point(225, 173);
+            vlType.ImeMode = ImeMode.NoControl;
+            vlType.Items.AddRange(new object[] { "Informática", "Limpeza", "Mat. Escritório" });
+            vlType.Location = new Point(258, 165);
             vlType.Name = "vlType";
             vlType.Size = new Size(100, 23);
             vlType.TabIndex = 12;
             // 
-            // button2
+            // checkStock
             // 
-            button2.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.Location = new Point(408, 237);
-            button2.Name = "button2";
-            button2.Size = new Size(145, 26);
-            button2.TabIndex = 13;
-            button2.Text = "Consultar estoque";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            checkStock.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            checkStock.Location = new Point(450, 237);
+            checkStock.Name = "checkStock";
+            checkStock.Size = new Size(145, 26);
+            checkStock.TabIndex = 13;
+            checkStock.Text = "Consultar estoque";
+            checkStock.UseVisualStyleBackColor = true;
+            checkStock.Click += button2_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.InactiveCaption;
-            ClientSize = new Size(800, 306);
-            Controls.Add(button2);
+            ClientSize = new Size(837, 389);
+            Controls.Add(checkStock);
             Controls.Add(vlType);
             Controls.Add(button1);
             Controls.Add(vlCodi);
@@ -180,6 +181,6 @@
         private TextBox vlCodi;
         private Button button1;
         private ComboBox vlType;
-        private Button button2;
+        private Button checkStock;
     }
 }
