@@ -1,4 +1,5 @@
 ﻿
+using control;
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
@@ -91,6 +92,53 @@ namespace MediaAritmetca
             {
                 dataGridView1.Rows.Add(item.Nome, item.Codigo, item.Tipo, item.Quantidade);
             }
+        }
+
+        private void btnRegistrarSaida_Click(object sender, EventArgs e)
+        {
+
+            Saida saida = new Saida();
+            saida.Show();
+            //// Verifica se algum item está selecionado no DataGridView
+            //if (dataGridView1.SelectedRows.Count > 0)
+            //{
+            //    // Obtém o índice da linha selecionada
+            //    int rowIndex = dataGridView1.SelectedRows[0].Index;
+
+            //    // Obtém o item selecionado
+            //    ListaDeItens.Item itemSelecionado = listaDeItens[rowIndex];
+
+            //    // Obtém a quantidade a ser retirada
+            //    int quantidadeRetirada;
+            //    if (!int.TryParse(txtQuantidadeRetirada.Text, out quantidadeRetirada))
+            //    {
+            //        MessageBox.Show("Por favor, insira uma quantidade válida.");
+            //        return;
+            //    }
+
+            //    // Verifica se há quantidade suficiente em estoque
+            //    if (quantidadeRetirada > itemSelecionado.Quantidade)
+            //    {
+            //        MessageBox.Show("Quantidade insuficiente em estoque.");
+            //        return;
+            //    }
+
+            //    // Atualiza a quantidade em estoque
+            //    itemSelecionado.Quantidade -= quantidadeRetirada;
+
+            //    // Atualiza o DataGridView
+            //    ExibirItens();
+
+            //    // Limpa o campo de quantidade retirada
+            //    txtQuantidadeRetirada.Text = "";
+
+            //    // Notifica o usuário sobre a saída registrada
+            //    MessageBox.Show($"Saída de {quantidadeRetirada} {itemSelecionado.Nome} registrada com sucesso.");
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Por favor, selecione um item no estoque.");
+            //}
         }
     }
 }

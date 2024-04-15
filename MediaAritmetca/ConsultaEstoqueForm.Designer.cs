@@ -109,6 +109,7 @@
             btnRegistrarSaida.TabIndex = 5;
             btnRegistrarSaida.Text = "Saidas";
             btnRegistrarSaida.UseVisualStyleBackColor = true;
+            btnRegistrarSaida.Click += btnRegistrarSaida_Click;
             // 
             // ConsultaEstoqueForm
             // 
