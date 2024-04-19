@@ -35,7 +35,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(304, 60);
+            label1.Location = new Point(310, 44);
             label1.Name = "label1";
             label1.Size = new Size(189, 30);
             label1.TabIndex = 0;
@@ -49,6 +49,7 @@
             Controls.Add(label1);
             Name = "Saida";
             Text = "Saida";
+            Load += Saida_Load;
             ResumeLayout(false);
             PerformLayout();
         }

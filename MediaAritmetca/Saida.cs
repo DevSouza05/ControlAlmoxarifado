@@ -16,5 +16,10 @@ namespace control
         {
             InitializeComponent();
         }
+
+        private void Saida_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
